@@ -44,7 +44,7 @@ Same as above. The only difference is replacing spinlocks with mutexes.
 
 5. thread_cv.c: implement conditional variables
 
-In this program, I create 10 threads and define a global variable "count".
+The program creates 10 threads and has a global variable "count".
 Only when count = tid can the thread start to work.
 Before starting work, the thread is a receiver; after finishing work, the thread becomes a sender. 
 Initially count is -1.
@@ -58,22 +58,22 @@ Main thread wakes up, finds that all child threads finish work, and continues it
 
 6. thread_sem.c: implement semaphores and the producer consumer queue of N elements
 
-In this program, I create 10 threads.
+The program creates 10 threads.
 Odd threads are producers (increase total_balance) and even threads are consumers (decrease total_balance).
 Because queue size (N) is only 3, if there have been 3 producers/cosumers working, others need to wait.
-I use semaphores emptyCount and fillCount to coordinate their work.
+Semaphores emptyCount and fillCount are used to coordinate their work.
 
 7. thread_mem.c: fix sbrk() and malloc()
 
-In this program, I create 10 threads.
+The program creates 10 threads.
 Even threads do sbrk(PGSIZE) and odd threads do malloc(PGSIZE).
-I add locks to growproc (pgtable.lock) and malloc (lock) to restrict threads' access to the two functions.
-Besides, I also modify growproc to synchronize parent thread and child threads' process sizes.
+Locks are added to growproc (pgtable.lock) and malloc (lock) to restrict threads' access to the two functions.
+Parent thread and child threads' process sizes are also synchronized to maintain the consistency of their page tables.
 
 8. thread_ptv.c: implement gettid()
 
-In this program, I create 10 threads and declare per-thread variables - name and amount.
-And then I use gettid() to access the variables.
+The program creates 10 threads and declares per-thread variables - name and amount.
+gettid() is used to access the variables.
 
 9. thread_ptvm.c: implement macros DEFINE_PER_THREAD(type, name) and per_thread(name)
 
