@@ -7,6 +7,7 @@ Please refer to the following link for more details:
 
 https://pdos.csail.mit.edu/6.828/2016/xv6/book-rev9.pdf
 
+
 How to compile and run xv6 in Linux:
 
 1. Install QEMU:
@@ -27,6 +28,7 @@ Please refer to the following links for more details:
 http://www.ics.uci.edu/~aburtsev/238P/hw/xv6-setup.html
 
 https://namangt68.github.io/xv6/os/ubuntu/2016/05/08/quick-install-xv6.html
+
 
 New features implemented: (The name of the source file corresponds to a command which is accepted by the xv6 shell.)
 
