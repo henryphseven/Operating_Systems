@@ -77,8 +77,7 @@ And then I use gettid() to access the variables.
 
 9. thread_ptvm.c: implement macros DEFINE_PER_THREAD(type, name) and per_thread(name)
 
-In this program, I create 10 threads and declare per-thread variables - name and amount.
-And then I use the macros to access the variables.
+Same as above. The only difference is replacing gettid() with macros.
 
 10. big.c: implement a linked-list file addressing for files of infinite length
 
