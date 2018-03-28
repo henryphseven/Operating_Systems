@@ -79,9 +79,9 @@ And then I use gettid() to access the variables.
 
 Same as above. The only difference is replacing gettid() with macros.
 
-10. big.c: implement linked-list file addressing for files of infinite length
+10. big.c: implement linked-list file addressing
 
-The program writes 4 files: 1MB, 2MB, 4MB, and 8MB, and then reads them.
+Originally the size of a single file in xv6 is limited to 140 sectors, or 71,680 bytes. Linked-list file addressing allows files of infinite length. The program writes 4 files: 1MB, 2MB, 4MB, and 8MB, and then reads them.
 
 Please refer to the following links for more details:
 
