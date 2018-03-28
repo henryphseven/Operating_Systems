@@ -79,7 +79,7 @@ And then I use gettid() to access the variables.
 
 Same as above. The only difference is replacing gettid() with macros.
 
-10. big.c: implement a linked-list file addressing for files of infinite length
+10. big.c: implement linked-list file addressing for files of infinite length
 
 The program writes 4 files: 1MB, 2MB, 4MB, and 8MB, and then reads them.
 
