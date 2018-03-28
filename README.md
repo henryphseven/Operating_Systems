@@ -10,15 +10,9 @@ https://pdos.csail.mit.edu/6.828/2016/xv6/book-rev9.pdf
 
 How to compile and run xv6 in Linux:
 
-1. Install QEMU:
+1. Install QEMU: In the terminal, type "sudo apt-get install qemu". And then type "sudo apt-get install libc6-dev:i386".
 
-sudo apt-get install qemu
-
-sudo apt-get install libc6-dev:i386
-
-2. Download the files into a folder.
-
-3. Compile and run the code:
+2. Download the files into a folder. 
 In the terminal, change the directory to that folder.
 Type "make" to compile the code.
 And then type “make qemu-nox” to run xv6.
