@@ -32,7 +32,7 @@ The program prints all processes running in the system and information about the
 
 2. dumppid.c: implement a new system call "dump" which dumps memory of a process on the console
 
-Typing dumppid <process id> will dump memory of the process with the matching process id on the console.
+Typing "dumppid <process id>" will dump memory of the process with the matching process id on the console.
 
 3. thread.c: implement threads and spinlocks
 
