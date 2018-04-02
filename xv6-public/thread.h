@@ -1,3 +1,7 @@
+//provide access to per-thread varibales as macros
+#define DEFINE_PER_THREAD(type, name) type name[MAX_THREADS]
+#define per_thread(name) name[gettid()]
+
 typedef struct{
 
    char name[32];
