@@ -7,10 +7,6 @@
 
 #define MAX_THREADS 10
 
-//provide access to per-thread varibales as macros
-#define DEFINE_PER_THREAD(type, name) type name[MAX_THREADS]
-#define per_thread(name) name[gettid()]
-
 DEFINE_PER_THREAD(balance_t, balance);
 
 volatile int total_balance = 0;
